@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Rstat::VERSION
   s.authors     = ["Sean Eshbaugh"]
   s.email       = ["seaneshbaugh@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "http://seaneshbaugh.com/"
   s.summary     = %q{A Simple statistics gem.}
   s.description = %q{A Simple statistics gem.}
 
@@ -17,4 +17,6 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+
+  s.add_development_dependency "rspec"
 end
