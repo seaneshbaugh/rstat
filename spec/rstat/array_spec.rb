@@ -74,4 +74,14 @@ describe Rstat do
       [44, 45, 46, 44, 46, 50].mode.should eql([44, 46])
     end
   end
+
+  describe ".standard_deviation" do
+    it "calculates the variance of an array" do
+      [1, 2, 3, 4, 5, 6].variance.should be_within(0.00001).of(2.91667)
+    end
+
+    it "calculates the standard deviation of an array" do
+      [1, 2, 3, 4, 5, 6].standard_deviation.should be_within(0.00001).of(1.70783)
+    end
+  end
 end
