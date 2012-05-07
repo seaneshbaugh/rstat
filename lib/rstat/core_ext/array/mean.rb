@@ -1,6 +1,6 @@
 class Array
   def mean
-    self.inject(:+).to_f / self.length
+    self.sum.to_f / self.length
   end
 
   def arithmetric_mean
@@ -8,7 +8,7 @@ class Array
   end
 
   def geometric_mean
-    self.inject(:*).to_f ** (1.0 / self.length)
+    self.product.to_f ** (1.0 / self.length)
   end
 
   def harmonic_mean
