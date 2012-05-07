@@ -1,3 +1,8 @@
+## v0.0.4
+
+* Added percentile.
+* Added interquartile range.
+
 ## v0.0.3
 
 * Better mode algorithm.

@@ -106,4 +106,22 @@ describe Rstat do
       [1, 2, 3, 4, 5, 6].coefficient_of_variation.should be_within(0.00001).of(0.48795)
     end
   end
+
+  describe ".percentile" do
+    it "finds the 30th percentile of an array" do
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].percentile(30).should be(3)
+    end
+
+    it "finds the 50th percentile of an array" do
+      [1, 2, 3, 4, 5].percentile(50).should be(3)
+    end
+
+    it "finds the 10th percentile of an array" do
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17].percentile(10).should be(2)
+    end
+
+    it "finds the interquartile range of an array" do
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].interquartile_range.should be(5)
+    end
+  end
 end
