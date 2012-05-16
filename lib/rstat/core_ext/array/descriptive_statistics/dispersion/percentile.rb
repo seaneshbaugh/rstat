@@ -3,7 +3,7 @@ class Array
     if p < 0 || p > 100
       nil
     else
-      self.sort[((p.to_f/100.0) * self.length.to_f) - 0.5]
+      self.sort[((p.to_f / 100.0) * self.length.to_f) - 0.5]
     end
   end
 

@@ -1,6 +1,6 @@
 class Array
   def median
-    unless self.length == 0
+    if self.length != 0
       copy = self.sort
 
       if copy.length % 2 == 0

@@ -1,3 +1,12 @@
+## v0.1.0
+
+* Major reorganization! All files now in directories named after their corresponding discipline (as sort of defined by Wikipedia).
+* Added skewness.
+* Mean methods now now use the sum method.
+* Minor reorganization of tests.
+* Changed Gemfile source to https.
+* Added index of dispersion.
+
 ## v0.0.4
 
 * Added percentile.

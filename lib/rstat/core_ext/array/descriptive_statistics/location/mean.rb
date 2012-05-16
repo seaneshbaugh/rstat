@@ -12,7 +12,7 @@ class Array
   end
 
   def harmonic_mean
-    self.length / self.map{ |x| 1.0 / x }.inject{ |sum, x| sum + x }.to_f
+    self.length / self.map{ |x| 1.0 / x }.sum.to_f
   end
 
   def quadratic_mean
@@ -20,6 +20,6 @@ class Array
   end
 
   def power_mean(p = 1)
-    ((1.0 / self.length) * self.map{ |x| x ** p }.inject{ |sum, x| sum + x }.to_f) ** (1.0 / p)
+    ((1.0 / self.length) * self.map{ |x| x ** p }.sum.to_f) ** (1.0 / p)
   end
 end
