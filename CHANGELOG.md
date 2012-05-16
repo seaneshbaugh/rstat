@@ -1,7 +1,12 @@
+## v0.1.1
+
+* Updated readme.
+
 ## v0.1.0
 
 * Major reorganization! All files now in directories named after their corresponding discipline (as sort of defined by Wikipedia).
 * Added skewness.
+* Added kurtosis.
 * Mean methods now now use the sum method.
 * Minor reorganization of tests.
 * Changed Gemfile source to https.
