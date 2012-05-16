@@ -12,7 +12,7 @@ Usage
 
 ```ruby
 require "rstat"
-=> true`
+ => true
 [1, 2, 3, 4, 5].mean
  => 3.0
 ```
