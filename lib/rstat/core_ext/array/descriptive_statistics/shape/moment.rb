@@ -1,5 +1,5 @@
 class Array
-  def central_moment k
+  def central_moment(k)
     if k < 0
       nil
     else
@@ -9,7 +9,7 @@ class Array
     end
   end
 
-  def raw_moment k
+  def raw_moment(k)
     if k < 0
       nil
     else

@@ -1,5 +1,5 @@
 class Array
-  def percentile p
+  def percentile(p)
     if p < 0 || p > 100
       nil
     else

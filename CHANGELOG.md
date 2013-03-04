@@ -1,6 +1,9 @@
 ## v0.1.1
 
+* Made rstat.rb load all files automatically instead of listing them manually.
 * Updated readme.
+* Added sample correlation coefficient.
+* Added simple linear regression.
 
 ## v0.1.0
 
