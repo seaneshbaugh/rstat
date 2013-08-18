@@ -26,12 +26,16 @@ describe Rstat do
 
   describe '.simple_linear_regression_slope' do
     it 'should return the slope of the linear regression equation for two arrays' do
+      Rstat.simple_linear_regression_slope([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]).should be_within(0.00001).of(1.0)
+
       Rstat.simple_linear_regression_slope([60, 61, 62, 63, 65], [3.1, 3.6, 3.8, 4, 4.1]).should be_within(0.00001).of(0.18784)
     end
   end
 
   describe '.simple_linear_regression_intercept' do
     it 'should return the slope of the linear regression equation for two arrays' do
+      Rstat.simple_linear_regression_intercept([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]).should be_within(0.00001).of(0.0)
+
       Rstat.simple_linear_regression_intercept([60, 61, 62, 63, 65], [3.1, 3.6, 3.8, 4, 4.1]).should be_within(0.00001).of(-7.96351)
     end
   end

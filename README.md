@@ -76,7 +76,7 @@ To run one particular line of a spec file:
 
     $ rspec spec/rstat/array_spec.rb:177
 
-Rstat has been tested with Ruby 1.8.7 and 1.9.3. There's little reason it shouldn't work with other versions of Ruby though.
+Rstat has been tested with Ruby 1.8.7, 1.9.3, and 2.0.0. There's little reason it shouldn't work with other versions of Ruby though.
 
 ## Console
 
