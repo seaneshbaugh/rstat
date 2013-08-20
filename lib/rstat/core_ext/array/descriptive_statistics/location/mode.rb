@@ -10,6 +10,6 @@ class Array
 
     max = seen.values.max
 
-    seen.find_all{ |key, value| value == max }.map{ |key, value| key }
+    seen.find_all{ |key, value| value == max }.map{ |key, value| key }.sort
   end
 end
