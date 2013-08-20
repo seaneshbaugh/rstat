@@ -1,5 +1,8 @@
 # Rstat
 
+[![Gem Version](https://fury-badge.herokuapp.com/rb/rstat.png)](http://badge.fury.io/rb/rstat)
+[![Travis](https://api.travis-ci.org/seaneshbaugh/rstat.png)](http://travis-ci.org/seaneshbaugh/rstat)
+
 A very simple statistics gem.
 
 ## Installation
@@ -87,7 +90,6 @@ Rstat includes a rake task to open up an irb session with the gem source preload
 ## Contributing
 
 If you feel like you can add something useful to Rstat then don't hesitate to send a pull request.
-
 
 ## A Note of Warning
 
