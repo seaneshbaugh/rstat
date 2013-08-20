@@ -30,8 +30,14 @@ describe Rstat do
         [0, 2, 3, 4, 5].geometric_mean.should eql(0.0)
       end
 
-      it 'calculates the geometric mean of an array with a negative element' do
-        [-1, 2, 3, 4, 5].geometric_mean.real?.should be_false
+      if Fixnum.method_defined?(:real?)
+        it 'calculates the geometric mean of an array with a negative element' do
+          [-1, 2, 3, 4, 5].geometric_mean.real?.should be_false
+        end
+      else
+        it 'should return NaN when calculating the geometric mean of an array with a negative element' do
+          [-1, 2, 3, 4, 5].geometric_mean.nan?.should be_true
+        end
       end
     end
 
