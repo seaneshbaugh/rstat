@@ -1,3 +1,7 @@
+## v0.1.2
+* Use inject(:*) rather than inject(1, &:*) for binomial_coefficient.
+* Fixed some tests to work with 1.8.7."
+
 ## v0.1.1
 
 * Made rstat.rb load all files automatically instead of listing them manually.
