@@ -79,13 +79,13 @@ To run one particular line of a spec file:
 
     $ rspec spec/rstat/array_spec.rb:177
 
-Rstat has been tested with Ruby 1.8.7, 1.9.3, and 2.0.0. There's little reason it shouldn't work with other versions of Ruby though.
+Rstat has been tested with Ruby 2.4.1. However, there's little reason it shouldn't work with other versions of Ruby as old as 2.0.0.
 
 ## Console
 
-Rstat includes a rake task to open up an irb session with the gem source preloaded. This is particularly useful if you're working with a local development copy of the gem's source and want to experiment with your changes. To use the preloaded console:
+Rstat includes a binstub to open up an IRB session with the gem preloaded. This is particularly useful if you're working with a local development copy of the gem's source and want to experiment with your changes. To use the preloaded console:
 
-    $ rake console
+    $ bin/console
 
 ## Contributing
 
