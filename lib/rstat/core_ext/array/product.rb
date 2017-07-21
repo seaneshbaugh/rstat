@@ -1,5 +1,5 @@
 class Array
   def product
-    self.inject(:*)
+    inject(:*)
   end
 end

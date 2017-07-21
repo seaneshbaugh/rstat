@@ -93,4 +93,4 @@ If you feel like you can add something useful to Rstat then don't hesitate to se
 
 ## A Note of Warning
 
-This gem extends the core Array class and Fixnum class. In isolation this is usually pretty harmless. But, in combination with other gems that do the same, unpredictable behavior may result. As always, use caution, and be aware of what this gem and any others you use actually do before including it in an important project.
+This gem extends the core Array and Integer classes. In isolation this is usually pretty harmless. But, in combination with other gems that do the same, unpredictable behavior may result. As always, use caution, and be aware of what this gem and any others you use actually do before including it in an important project.

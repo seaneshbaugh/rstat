@@ -1,15 +1,13 @@
 class Array
   def median
-    if self.length != 0
-      copy = self.sort
+    return nil if length == 0
 
-      if copy.length % 2 == 0
-        (copy[copy.length / 2 - 1] + copy[copy.length / 2]) / 2.0
-      else
-        copy[copy.length / 2]
-      end
+    copy = sort
+
+    if copy.length.even?
+      (copy[copy.length / 2 - 1] + copy[copy.length / 2]) / 2.0
     else
-      nil
+      copy[copy.length / 2]
     end
   end
 end

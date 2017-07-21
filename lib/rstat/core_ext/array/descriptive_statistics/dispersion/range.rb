@@ -1,5 +1,5 @@
 class Array
   def range
-    self.max - self.min
+    max - min
   end
 end

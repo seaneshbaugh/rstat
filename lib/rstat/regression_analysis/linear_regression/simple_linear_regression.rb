@@ -1,8 +1,6 @@
 module Rstat
   def self.simple_linear_regression(x, y)
-    if x.length != y.length
-      return nil
-    end
+    return nil if x.length != y.length
 
     n = x.length
 
@@ -18,26 +16,22 @@ module Rstat
 
     sumxx = xx.sum
 
-    slope = ((n * sumxy) - (sumx * sumy)) / ((n * sumxx) - (sumx ** 2))
+    slope = ((n * sumxy) - (sumx * sumy)) / ((n * sumxx) - (sumx**2))
 
     intercept = (sumy - (slope * sumx)) / n
 
-    { :slope => slope, :intercept => intercept }
+    { slope: slope, intercept: intercept }
   end
 
   def self.simple_linear_regression_slope(x, y)
-    if x.length != y.length
-      return nil
-    end
+    return nil if x.length != y.length
 
-    Rstat.simple_linear_regression(x, y)[:slope]
+    simple_linear_regression(x, y)[:slope]
   end
 
   def self.simple_linear_regression_intercept(x, y)
-    if x.length != y.length
-      return nil
-    end
+    return nil if x.length != y.length
 
-    Rstat.simple_linear_regression(x, y)[:intercept]
+    simple_linear_regression(x, y)[:intercept]
   end
 end

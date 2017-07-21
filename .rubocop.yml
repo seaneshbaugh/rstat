@@ -1,0 +1,22 @@
+AllCops:
+  DisplayCopNames: true
+
+Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/NumericLiterals:
+  Exclude:
+    - spec/**/*
+
+Style/NumericPredicate:
+  Enabled: false
