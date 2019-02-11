@@ -1,9 +1,9 @@
 # Rstat
 
 [![Gem Version](https://badge.fury.io/rb/rstat.svg)](https://badge.fury.io/rb/rstat)
-[![Travis](https://travis-ci.com/seaneshbaugh/rstat.svg?branch=master)](https://travis-ci.org/seaneshbaugh/rstat)
+[![Travis](https://travis-ci.org/seaneshbaugh/rstat.svg?branch=master)](https://travis-ci.org/seaneshbaugh/rstat)
 
-A very simple statistics.
+A very simple statistics gem.
 
 ## Installation
 
