@@ -1,9 +1,9 @@
 # Rstat
 
-[![Gem Version](https://fury-badge.herokuapp.com/rb/rstat.png)](http://badge.fury.io/rb/rstat)
-[![Travis](https://api.travis-ci.org/seaneshbaugh/rstat.png)](http://travis-ci.org/seaneshbaugh/rstat)
+[![Gem Version](https://badge.fury.io/rb/rstat.svg)](https://badge.fury.io/rb/rstat)
+[![Travis](https://travis-ci.com/seaneshbaugh/rstat.svg?branch=master)](https://travis-ci.org/seaneshbaugh/rstat)
 
-A very simple statistics gem.
+A very simple statistics.
 
 ## Installation
 
@@ -79,7 +79,7 @@ To run one particular line of a spec file:
 
     $ rspec spec/rstat/array_spec.rb:177
 
-Rstat has been tested with Ruby 2.4.1. However, there's little reason it shouldn't work with other versions of Ruby as old as 2.0.0.
+Rstat has been tested with Ruby 2.6.1. However, there's little reason it shouldn't work with other versions of Ruby as old as 2.0.0.
 
 ## Console
 
@@ -91,6 +91,8 @@ Rstat includes a binstub to open up an IRB session with the gem preloaded. This 
 
 If you feel like you can add something useful to Rstat then don't hesitate to send a pull request.
 
-## A Note of Warning
+## A Few Words of Caution
 
 This gem extends the core Array and Integer classes. In isolation this is usually pretty harmless. But, in combination with other gems that do the same, unpredictable behavior may result. As always, use caution, and be aware of what this gem and any others you use actually do before including it in an important project.
+
+Addtionally, this gem makes no effort to coerce values to any kind of `Numeric` so obviously it'll raise all sorts of errors if your data does not consist only of numbers. (TODO: Add custom exception classes for this.)
